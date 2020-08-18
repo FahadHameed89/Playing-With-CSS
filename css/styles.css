@@ -81,6 +81,19 @@ font-style: normal;
     word-wrap: normal !important;
   }
 
+/*
+ *  Body Width.
+ */
+
+ body {
+   max-width: 500px;
+   /*
+    * This next step auto-centers the text, can also be written as 'margin: 0 auto;' if you dont have top and bottom margins applied. 
+   */
+   margin-right: auto;
+   margin-left: auto;
+ }
+
   /*
    *  Headings
   */
@@ -131,6 +144,12 @@ font-family: 'Rubik', Arial, Helvetica, sans-serif;
 
 p:nth-of-type(3) {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Target the 3rd <p> inside an element*/
+p:nth-of-type(3) img {
+  float: left;
+  margin-left: 100x;
 }
 
 /*
