@@ -1,4 +1,17 @@
-/* Text meant only for screen readers. 
+/* 
+ * This is not a selector, this is where we define a font!
+ * FontLink: https://www.dafont.com/tengwar-annatar.font
+*/
+@font-face {
+font-family: 'tngan';
+src: url( '../fonts/tngan/tngan.ttf');
+
+src: url( '../fonts/tngan/tngan.ttf')
+  format( 'truetype' );
+  font-weight: normal;    /* This is how bold the font is */
+  font-style: normal;     /* This is whether italic, bold, UL */
+}
+  /* Text meant only for screen readers. 
  SourceLink: https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
 
 */
@@ -15,6 +28,13 @@
     word-wrap: normal !important;
   }
 
+  /*
+   *  Headings
+  */
+
+  h1 {
+    font-family: 'tngan', 'Courier New', Courier, monospace; 
+  }
 
   /*
   Navigation Links
@@ -25,7 +45,14 @@
     text-decoration: none; /* Removes underlines */
     /* Color adjusts the font color*/
     color: rgb(0, 25, 199); /* There are a few ways to do color such as name, RGB, and hex are common */
- }
+ /*
+ Fony familities are used for defining which found should be used and where. If the first font is not installed on the device, the second will be read and if the second isnt available then the next will be 
+ chosen and so on. This is referred to as a font-stack. 
+ */
+    font-family: Heveltica, Arial, sans-serif;
+  }
+
+
 
 /*
 "The 'Hover" state of any anchor (a) inside of a nav:
