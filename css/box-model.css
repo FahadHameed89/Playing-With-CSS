@@ -1,0 +1,14 @@
+html { background-color: teal; }
+
+#box-model {
+    width: 300px;
+    height: 200px;
+    background-color: crimson;
+    padding: 60px;
+    border-top: 60px solid red;
+    border-right: 60px solid green;
+    border-bottom: 60px solid purple;
+    border-left: 60px solid gold;
+    margin: 60px;
+
+}
