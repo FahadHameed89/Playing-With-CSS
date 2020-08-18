@@ -1,6 +1,7 @@
 /* 
  * This is not a selector, this is where we define a font!
  * FontLink: https://www.dafont.com/tengwar-annatar.font
+ * 
 */
 @font-face {
 font-family: 'tngan';
@@ -11,6 +12,58 @@ src: url( '../fonts/tngan/tngan.ttf')
   font-weight: normal;    /* This is how bold the font is */
   font-style: normal;     /* This is whether italic, bold, UL */
 }
+/* 
+ * RUBIK FONT
+ * 
+ * FontLink: https://www.fontsquirrel.com/fonts/rubik
+*/
+
+@font-face { /*Rubik Regular*/
+  font-family: 'Rubik';
+  src: url( '..fonts/rubik/Rubik-Regular.ttf');
+  src: url( '..fonts/rubik/Rubik-Regular.ttf')
+    format( 'truetype' );
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face { /*Rubik Black*/
+  font-family: 'Rubik';
+  src: url( '..fonts/rubik/Rubik-Black.ttf');
+  src: url( '..fonts/rubik/Rubik-Black.ttf')
+    format( 'truetype' );
+font-weight: bolder;
+font-style: normal;
+
+}
+
+@font-face { /*Rubik Black Italic*/
+  font-family: 'Rubik';
+  src: url( '..fonts/rubik/Rubik-BlackItalic.ttf');
+  src: url( '..fonts/rubik/Rubik-BlackItalic.ttf')
+    format( 'truetype' );
+font-weight: bolder;
+font-style: italic;
+}
+
+@font-face { /*Rubik Medium*/
+  font-family: 'Rubik';
+  src: url( '..fonts/rubik/Rubik-Medium.ttf');
+  src: url( '..fonts/rubik/Rubik-Medium.ttf')
+    format( 'truetype' );
+font-weight: bold;
+font-style: italic;
+}
+
+@font-face { /*Rubik Light*/
+  font-family: 'Rubik';
+  src: url( '..fonts/rubik/Rubik-Light.ttf');
+  src: url( '..fonts/rubik/Rubik-Light.ttf')
+    format( 'truetype' );
+font-weight: lighter;
+font-style: normal;
+}
+
   /* Text meant only for screen readers. 
  SourceLink: https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
 
