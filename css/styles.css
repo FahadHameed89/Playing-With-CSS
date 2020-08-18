@@ -14,3 +14,31 @@
     width: 1px;
     word-wrap: normal !important;
   }
+
+
+  /*
+  Navigation Links
+
+  Any anchor (a) inside of a nav
+  */
+  nav a {
+    text-decoration: none; /* Removes underlines */
+    /* Color adjusts the font color*/
+    color: rgb(0, 25, 199); /* There are a few ways to do color such as name, RGB, and hex are common */
+ }
+
+/*
+"The 'Hover" state of any anchor (a) inside of a nav:
+*/
+nav a:hover {
+    color: crimson;
+}
+
+
+
+/*
+Direct Descentdant - the UL must be DIRECTLY inside the NAV for this style to take effect!
+*/
+  nav > ul {
+    list-style-type: circle;
+ }
