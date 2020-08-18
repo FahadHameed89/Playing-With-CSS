@@ -114,7 +114,24 @@ nav a:hover {
     color: crimson;
 }
 
+/*
+ * Page Content (Rubik Font Testing)
+*/
+.black-font {
+  font-weight: bolder;
+}
 
+.light-font {
+  font-weight: lighter;
+}
+h2, p {
+font-family: 'Rubik', Arial, Helvetica, sans-serif;
+
+}
+
+p:nth-of-type(3) {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
 /*
 Direct Descentdant - the UL must be DIRECTLY inside the NAV for this style to take effect!
