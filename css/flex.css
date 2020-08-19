@@ -90,3 +90,22 @@
      width: 50%;
    }
  }
+
+ /*
+    Labtops and Desktops
+ */
+
+@media screen and ( min-width: 1024px ) {
+  /* LOGO */
+  header h1 {order: 1; }
+  /* NAVIGATION */
+  header form {
+    order: 3; 
+    width: 25%
+  }
+  /* SEARCH BAR */
+  header nav {
+    order: 2; 
+    width: 50%
+  }
+}
