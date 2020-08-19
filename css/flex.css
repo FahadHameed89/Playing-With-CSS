@@ -1,1 +1,39 @@
-html { background-color: salmon; }
+/*
+    DONT DO THIS PART IN REAL PRODUCTION
+    JUST SETTING HEIGHTS AND COLORS FOR TESTING PURPOSES...
+*/
+
+header h1,
+header form,
+header nav {
+    height: 40vw;
+    background-color: blue;}
+header form { background-color: green;}
+header nav {background-color: red;}
+
+main section,
+main article,
+main form {
+    height: 50vw;
+    background-color: purple;
+}
+main section:nth-of-type(2) { background-color: teal; }
+main section:nth-of-type(3) { background-color: orange; }
+main article { background-color: maroon; }
+main form { background-color: powderblue;}
+
+footer {
+    height: 20vw;
+    background-color: peru;
+}
+
+/*
+    Browser Default Style Reset - Dont normally want to use this...but will for testing purposes
+  (Look into professionally prepared ones online!) 
+*/
+  * {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
