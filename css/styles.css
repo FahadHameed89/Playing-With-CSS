@@ -165,22 +165,32 @@ p:nth-of-type(3) img {
   Mobile-first mindset means using "min-width rules"
   The styles inside are only applied for screens that are a minimum (this size or greater) than 400px
 */
+/**/
 @media screen and ( min-width: 800px ) {
   html {background-color: #aaaaaa;}
 
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+  }
+
+  nav li {
+    display: block;
+    padding: 1.5rem 1.2rem 1.0rem;
+    background: forestgreen;
+  }
+
   @media screen and ( min-width: 1024px ) {
-    html {background-color: purple;
+    html {
+      background-color: grey;
     }
      
     @media screen and ( min-width: 1200px ) {
-      html {background-color: #777777;}
-        
-
+      html {
+      background-image: /img/Mountain.png ("Mountain!");
+      background-color: grey;
+      }
+      
 }
 
-/*
-Direct Descentdant - the UL must be DIRECTLY inside the NAV for this style to take effect!
-*/
-  nav > ul {
-    list-style-type: circle;
- }
