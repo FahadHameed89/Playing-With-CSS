@@ -1,39 +1,92 @@
 /*
-    DONT DO THIS PART IN REAL PRODUCTION
-    JUST SETTING HEIGHTS AND COLORS FOR TESTING PURPOSES...
-*/
+ * DON'T DO THIS PART IN THE REAL WORLD
+ * WE ARE JUST SETTING HEIGHTS AND COLOURS
+ * FOR TESTING PURPOSES...
+ */
 
-header h1,
-header form,
-header nav {
-    height: 40vw;
-    background-color: blue;}
-header form { background-color: green;}
-header nav {background-color: red;}
-
-main section,
-main article,
-main form {
-    height: 50vw;
-    background-color: purple;
-}
-main section:nth-of-type(2) { background-color: teal; }
-main section:nth-of-type(3) { background-color: orange; }
-main article { background-color: maroon; }
-main form { background-color: powderblue;}
-
-footer {
-    height: 20vw;
-    background-color: peru;
-}
-
-/*
-    Browser Default Style Reset - Dont normally want to use this...but will for testing purposes
-  (Look into professionally prepared ones online!) 
-*/
-  * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-}
+ header h1,
+ header form,
+ header nav {
+   height: 30vw;
+   background-color: blue;
+ }
+ header form { background-color: greenyellow; }
+ header nav { background-color: brown; }
+ 
+ main section,
+ main article,
+ main form {
+   height: 50vw;
+   background-color: peru;
+ }
+ main section:nth-of-type(2) { background-color: red; }
+ main section:nth-of-type(3) { background-color: pink; }
+ main section:nth-of-type(4) { background-color: chartreuse; }
+ main article { background-color: royalblue; }
+ main form { background-color: green; }
+ 
+ footer {
+   height: 20vw;
+   background-color: purple;
+ }
+ 
+ /*
+  * Browser Default Style Reset
+  * ( Please look into professionally prepared ones online! )
+  */
+ * {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ /*
+  * Okay, now we're starting the Flex practice for real!
+  * REMEMBER: Mobile first!
+  */
+ 
+ header {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ 
+ header h1 { /* Logo */
+   width: 25%;
+ }
+ 
+ header form { /* Search */
+   width: 75%;
+ }
+ 
+ header nav {
+   /* width: 100vw; */
+   width: 100%;
+ }
+ 
+ /*
+  * Now targeting tablets and larger...
+  */
+ @media screen and ( min-width: 600px ) {
+   main {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+   main section,
+   main article,
+   main form {
+     width: 100%;
+   }
+   /* "Service 1" */
+   main section:nth-of-type(2),
+   /* "Service 2" */
+   main section:nth-of-type(3),
+   /* "Additional" */
+   main article,
+   /* "Contact Us" */
+   main form {
+     width: 50%;
+   }
+ }
