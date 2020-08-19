@@ -90,6 +90,7 @@ font-style: normal;
    /*
     * This next step auto-centers the text, can also be written as 'margin: 0 auto;' if you dont have top and bottom margins applied. 
    */
+   max-width: 75%;
    margin-right: auto;
    margin-left: auto;
  }
@@ -109,12 +110,7 @@ font-style: normal;
   */
   nav a {
     text-decoration: none; /* Removes underlines */
-    /* Color adjusts the font color*/
-    color: rgb(0, 25, 199); /* There are a few ways to do color such as name, RGB, and hex are common */
- /*
- Fony familities are used for defining which found should be used and where. If the first font is not installed on the device, the second will be read and if the second isnt available then the next will be 
- chosen and so on. This is referred to as a font-stack. 
- */
+    color: rgb(0, 25, 199); 
     font-family: Heveltica, Arial, sans-serif;
   }
 
@@ -148,8 +144,33 @@ p:nth-of-type(3) {
 
 /* Target the 3rd <p> inside an element*/
 p:nth-of-type(3) img {
-  float: left;
-  margin-left: 100x;
+  display: block;
+  width: auto;
+  max-width: 80%; /* IF it's a smaller screen, the max width of the image = max width of the window */
+  margin: 0 auto 1.5em; /*First value = top, 2nd is left and right, 3rd is bottom - 1.5em refers to the font size*/
+ 
+  /*
+ margin has a few different formats taht can be used to set values:
+ - Margin: 0 auto 1.5em is the same as...
+ margin-top: 0;
+ margin-right auto;
+ margin-bottom: 1.5em;
+ margin-left: auto
+ */
+
+}
+
+/*
+  Media Query (used for setting break points)
+  Mobile-first mindset means using "min-width rules"
+  The styles inside are only applied for screens that are a minimum (this size or greater) than 400px
+*/
+@media screen and ( min-width: 350px ) {
+  p:nth-of-type(3) img {
+    float: left;
+    margin-left: 32x;
+  }
+
 }
 
 /*
