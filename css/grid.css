@@ -43,7 +43,18 @@ body {
     120px /* Service 3 */
     200px /* Additional */
     260px /*Contact Form*/
-    32px /*Footer*/
+    32px /*Footer*/;
+    grid-template-areas:
+    "logo search"
+    "logo navigation"
+    "hero hero"
+    "service3 service3"
+    "service2 service2"
+    "service1 service1"
+    "additional additional"
+    "contact contact"
+    "footer footer";
+
 }
 
 /*
