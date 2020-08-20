@@ -13,9 +13,35 @@ h1 {background-color: orange;}
 nav {background-color: seagreen;}
 .hero {background-color: slategray; }
 .service-1 {background-color: firebrick; }
-.service-2 {background-color: goldenrod; }
+.service-2 {background-color: pink; }
 .service-3 {background-color: cornflowerblue; }
 article {background-color: green; }
 #contact-form {background-color: blueviolet; }
 footer {background-color: seagreen; }
 
+/*
+    GRID INITIATALIZATION
+*/
+
+/*
+Much like Flex, to have grid items or 'cells', you need to have a container with display: grid.
+The contents will follow the grid rules. 
+
+In this example, look at our HTML code and you can see we are modifying the elements within the <body> of the page.
+*/
+
+body {
+    display: grid;
+    /*Defining the width of each column in the grid! In this case we want 25% on the first column and 75% on the second column!*/
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 
+    32px /* Logo & Search Form*/
+    64px /* Navigation Bar*/
+    300px /* Hero Statement */
+    120px /* Service 1 */
+    120px /* Service 2 */
+    120px /* Service 3 */
+    200px /* Additional */
+    260px /*Contact Form*/
+    32px /*Footer*/
+}
